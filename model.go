@@ -4,9 +4,11 @@ import "time"
 
 // 短信发送结果
 type SMSResult struct {
-	Success bool
-	Code    string
-	Message string
+	PhoneNumber string
+	Success     bool
+	Code        string
+	Message     string
+	RequestID   string
 }
 
 // 状态报告
